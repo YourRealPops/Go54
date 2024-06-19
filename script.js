@@ -1,8 +1,15 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const marqueeContent = document.getElementById('marqueeContent');
-    const finalContent = document.getElementById('finalContent');
+const asideSection = document.querySelector("aside");
+const mainSection = document.querySelector("main");
 
-    marqueeContent.addEventListener('animationend', () => {
-      finalContent.classList.add('show');
-    });
-  });
+const signInBtn = document.getElementById("sign-in-btn");
+const signUpBtn = document.getElementById("sign-up-btn");
+
+signInBtn.addEventListener("click", () => {
+    mainSection.classList.add("slideRight");
+    asideSection.classList.add("slideLeft");
+});
+
+signUpBtn.addEventListener("click", () => {
+    mainSection.classList.remove("slideRight");
+    asideSection.classList.remove("slideLeft");
+});

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GO54</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="head">
+      <div class="logo">
+        <img src="GO54-logo.png" alt="" />
+      </div>
+      <ul>
+        <li><a href="#">Domains</a></li>
+        <li><a href="#">Hosting</a></li>
+        <li><a href="#">Website</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Marketing</a></li>
+        <li><a href="#">Market Place</a></li>
+        <li><a href="#">Bundles</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <main>
+        <!--Sign up form-->
+        <div class="form signup-form">
+          <h2>Create Account</h2>
+          <form>
+            <label for="user_name">Name</label>
+            <input type="text" id="user_name" />
+
+            <label for="user_email">Email</label>
+            <input type="email" id="user_email" />
+
+            <label for="user_password">Password</label>
+            <input type="password" id="user_password" />
+
+            <label for="user_password">Confirm Password</label>
+            <input type="password" id="user_password" />
+
+            <button class="sub" type="submit">Sign Up</button>
+          </form>
+        </div>
+
+        <!--Sign-in form-->
+        <div class="form signin-form">
+          <h2>Login</h2>
+          <form>
+            <label for="user_email">Email</label>
+            <input type="email" id="user_email" />
+
+            <label for="user_password">Password</label>
+            <input type="password" id="user_password" />
+
+            <button class="sub" type="submit">Sign In</button>
+          </form>
+        </div>
+      </main>
+
+      <aside>
+        <!---sign in block in aside-->
+        <div class="sign-in-block">
+          <h2>Already a user?</h2>
+
+          <button class="sub" type="submit" id="sign-in-btn">Sign In</button>
+        </div>
+
+        <!---sign up block in aside-->
+
+        <div class="sign-up-block">
+          <h2>New User?</h2>
+
+          <button class="sub" type="submit" id="sign-up-btn">Sign Up</button>
+        </div>
+      </aside>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
