@@ -223,3 +223,55 @@ button.submit{
     background-color: #f99c1c;
     border: 1px solid #f99c1c;
 }
+
+.log span{
+  color: #F99C1C;
+}
+
+footer{
+  background-color: #131735;
+}
+.login{
+  display: flex;
+  justify-content: space-between;
+}
+.log{
+  color: #f8e1b8;
+  padding: 20px;
+  font-size: 2em;
+}
+.log-box{
+  padding: 20px;
+}
+.log-buttons button{
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.log-p{
+  font-size: 1.3em;
+  color: #ce7a04;
+}
+button.lo{
+  background-color: #f99c1c;
+  padding: 13px 35px;
+  font-size: 1.2em;
+}
+button.sta{
+  background-color: #fff;
+  padding: 13px 35px;
+  font-size: 1.2em;
+  border: 1px solid #ce7a04;
+}
+button.sta:hover {
+  background-color: #fab554;
+  cursor: pointer;
+}
+button.lo:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.copy{
+  color: #ce7a04;
+  font-size: 1.3em;
+  padding: 10px;
+}
