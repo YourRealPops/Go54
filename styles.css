@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+}
+header {
+  margin: 0 20px;
+}
+.head {
+  display: flex;
+}
+.logo img {
+  width: 82px;
+  height: 26px;
+  margin-top: 33px;
+}
+.head ul {
+  list-style: none;
+  display: flex;
+  padding: 37px;
+}
+ul a {
+  text-decoration: none;
+  margin: 10px;
+  color: #667085;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+section.banner {
+  background-color: #0a0d1a;
+}
+.banner h1 {
+  font-size: 3em;
+  color: #f8e1b8;
+  padding: 40px;
+  line-height: 1.2em;
+  margin: 0 0 16px;
+}
+button.reg {
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid #e28e1c;
+  margin-bottom: 50px;
+}
+button.trans {
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid #e28e1c;
+  background-color: #0a0d1a;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+.search-bar {
+  width: 700px;
+  padding: 20px; /* Add padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search-button {
+  padding: 20px;
+  background-color: #e28e1c;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+}
+.search-button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+}
+nav ul a {
+  color: #474b54;
+}
+.hero {
+  background-color: #fddb9c;
+  margin: 0 50px;
+}
+.content-box {
+  padding: 20px;
+  display: flex;
+}
+.content {
+}
+.content h2 {
+  padding-top: 40px;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+.content p {
+  font-size: 1.5em;
+  color: #5a5b5e;
+  margin-bottom: 40px;
+}
+button.start {
+  background-color: #f99c1c;
+  padding: 13px 35px;
+  font-size: 1.2em;
+}
+button.learn {
+  background-color: #fff;
+  padding: 13px 35px;
+  font-size: 1.2em;
+  border: 1px solid #ce7a04;
+}
+button.learn:hover {
+  background-color: #fab554;
+  cursor: pointer;
+}
+button.start:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+section.testify {
+  margin: 100px 150px;
+}
+.testify h1 {
+  font-size: 3em;
+}
+.testify p {
+  font-size: 1.5em;
+  color: #667085;
+  margin: 10px 0;
+}
+.test {
+  background-color: #faf6f6;
+  padding: 50px;
+}
+span.aps {
+  font-size: 5em;
+  color: #fbad1e;
+}
+
+.brands h1 {
+  font-size: 3em;
+  padding: 20px;
+}
+/*width = 140, height = 72*/
+.icons {
+  display: flex;
+  width: 140px;
+  height: 60px;
+  margin: 70px 150px;
+}
+.icn {
+  margin-right: 75px;
+}
+
+section.why{
+    background-color: #131735;
+}
+.why h1{
+    color: #F99C1C;
+    font-size: 3.5em;
+    padding: 20px 100px;
+}
+.why p{
+    color: #fff;
+    font-size: 1.3em;
+    padding: 0 100px;
+}
+.box-container{
+    padding: 20px 80px;
+    display: flex;
+}
+.box{
+    display: flex;
+}
+.right{
+   margin-left: 150px;
+}
+.box-icon{
+    padding: 80px 0 30px 30px;
+}
+.box-content{
+    padding: 10px;
+}
+.box-content h2{
+    color: white;
+    padding: 10px;
+}
+.box-content p{
+    color: #989299;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+section.mail{
+    background-color: #FCD07F;
+}
+.mail h1{
+    font-size: 3.5em;
+    padding: 90px 0 20px 0;
+}
+.mail p{
+    font-size: 1.2em;
+    color: #767067;
+    margin-bottom: 40px;
+}
+input{
+    width: 700px;
+    padding: 18px; /* Add padding to make space for the icon */
+    border: 1px solid #f99c1c;
+    border-radius: 4px;
+    margin-bottom: 100px;
+}
+button.submit{
+    padding: 18px 30px;
+    background-color: #f99c1c;
+    border: 1px solid #f99c1c;
+}
