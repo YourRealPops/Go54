@@ -15,8 +15,3 @@ signInBtn.addEventListener("click", () => {
     mainSection.classList.add("slideRight");
     asideSection.classList.add("slideLeft");
 });
-
-signUpBtn.addEventListener("click", () => {
-    mainSection.classList.remove("slideRight");
-    asideSection.classList.remove("slideLeft");
-});
