@@ -8,28 +8,48 @@ body {
   background-color: #fff;
 }
 header {
-  margin: 0 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
 }
-.head {
+.menuToggle, .close{
+  display: none;
+}
+header.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header .logo {
+  padding: 0 0 20px 20px;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: relative;
   display: flex;
 }
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+header .navigation li a {
+  text-decoration: none;
+  color: #767067;
+  font-weight: 300;
+}
+
 .logo img {
   width: 82px;
   height: 26px;
   margin-top: 33px;
 }
-.head ul {
-  list-style: none;
-  display: flex;
-  padding: 37px;
-}
-ul a {
-  text-decoration: none;
-  margin: 10px;
-  color: #667085;
-  font-weight: 400;
-  font-size: 1.2em;
-}
+
 section.banner {
   background-color: #0a0d1a;
 }
@@ -55,14 +75,24 @@ button.trans {
   margin-bottom: 50px;
 }
 .search-container {
-  display: flex;
   justify-content: center;
 }
 .search-bar {
-  width: 700px;
+  width: 500px;
   padding: 20px; /* Add padding to make space for the icon */
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+input.search-bar {
+  margin-bottom: 0px;
+}
+.search-container p {
+  padding: 20px 20px 40px 20px;
+  font-size: 1.2em;
+  color: #989299;
+}
+.search-container p a {
+  color: #ce7a04;
 }
 .search-button {
   padding: 20px;
@@ -79,14 +109,31 @@ button.trans {
 nav ul {
   list-style: none;
   display: flex;
-  padding: 30px;
-  justify-content: space-between;
+  /* padding: 30px; */
+  justify-content: center;
+  margin: 20px 0;
 }
 nav ul a {
   color: #474b54;
+  /* padding: 50px; */
+  font-weight: 500;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+nav ul li a {
+  padding: 20px 50px;
+}
+.act-li {
+  background-color: #feefd4;
+}
+nav ul a:active {
 }
 .hero {
-  background-color: #fddb9c;
+  background: linear-gradient(
+    to right,
+    rgba(253, 219, 156, 1) 0%,
+    rgba(253, 219, 156, 0) 100%
+  );
   margin: 0 50px;
 }
 .content-box {
@@ -200,7 +247,11 @@ section.why {
 }
 
 section.mail {
-  background-color: #fcd07f;
+  background: linear-gradient(
+    to right,
+    rgba(252, 208, 127, 1) 0%,
+    rgba(252, 208, 127, 0) 100%
+  );
 }
 .mail h1 {
   font-size: 3.5em;
@@ -296,7 +347,7 @@ button.sta:hover {
   font-size: 1.2em;
 }
 li.sub-t {
-  color: #b59c73;
+  color: #f0bc64;
 }
 .list-item li:hover {
   color: #5f6378;
@@ -324,13 +375,15 @@ ul.cop-li li {
 
 /*Media Queries*/
 @media (max-width: 765px) {
-  .head,
   .hero,
   .content-box,
   .box-container,
   .footer-box {
     flex-direction: column;
     align-items: center;
+  }
+  .head {
+    justify-content: space-between;
   }
   .logo img,
   .head ul,
@@ -372,12 +425,47 @@ ul.cop-li li {
 }
 
 @media (max-width: 480px) {
-  .logo img,
-  .head ul,
   .search-bar,
   .input {
     width: 100%;
     text-align: center;
+  }
+  header .navigation {
+    display: none;
+  }
+  header {
+    justify-content: space-between;
+  }
+  header .navigation.active {
+    width: 100%;
+    height: 250px;
+    position:absolute;
+    top: 80px;
+    display: inline-block;
+    padding: 10px;
+    flex-direction: column;
+    background: #fff;
+    opacity: 95%;
+  }
+  header .navigation li {
+    margin: 5px;
+    margin-bottom: 0;
+    padding: 5px;
+
+  }
+
+  .menuToggle {
+    position: relative;
+    font-size: 2.5em;
+    padding: 10px;
+    display: block;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .image img {
+    width: 336px;
+    height: 252px;
   }
   .content h2,
   .banner h1,
@@ -385,6 +473,12 @@ ul.cop-li li {
   .brands h1,
   .mail h1 {
     font-size: 2em;
+  }
+  section.testify {
+    margin: 10px 20px;
+  }
+  nav ul li a {
+    padding: 20px 10px;
   }
   .content p,
   .testify p,
@@ -401,7 +495,17 @@ ul.cop-li li {
   .test,
   .box,
   .right {
+    display: flex;
     margin: 0;
+  }
+  .icn {
+    height: 40px;
+    width: 85px;
+    padding-right: 10px;
+  }
+  .mail input {
+    width: 400px;
+    margin-bottom: 10px;
   }
   .icon,
   .icn,
