@@ -507,7 +507,7 @@ ul.cop-li li {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   .search-bar,
   .input {
     width: 100%;
